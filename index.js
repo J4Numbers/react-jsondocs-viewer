@@ -25,7 +25,7 @@ require("babel-polyfill");
 
 async function screen_render() {
     //Read in the JSON documentation
-    let data = await read_docs("/inform_docs.json");
+    let data = await read_docs("/json/inform_docs.json");
 
     //Pass the documentation to all other routes.
     render(
