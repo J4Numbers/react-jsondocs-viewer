@@ -1,0 +1,8 @@
+node_modules/
+*.lock
+*.yarnclean
+inform_docs.json
+*.babelrc
+*.log
+bundled.js
+public/json/*.json
