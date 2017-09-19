@@ -1,0 +1,5 @@
+.listings {
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
