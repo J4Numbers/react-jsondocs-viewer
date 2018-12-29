@@ -7,7 +7,7 @@ module.exports = {
     output: {
         filename: 'bundled.js',
         path: path.resolve(__dirname, 'public'),
-        publicPath: "/"
+        publicPath: '/'
     },
 
     module: {
@@ -17,7 +17,7 @@ module.exports = {
 
                 exclude: /node_modules/,
 
-                enforce: "pre",
+                enforce: 'pre',
 
                 loader: 'babel-loader',
                 options: {
