@@ -2,6 +2,7 @@ var path = require('path');
 
 module.exports = {
     entry: ['whatwg-fetch', './index.js'],
+    mode: 'development',
 
     output: {
         filename: 'bundled.js',
@@ -20,8 +21,8 @@ module.exports = {
 
                 loader: 'babel-loader',
                 options: {
-                    presets: ['react', 'es2015', 'env'],
-                    plugins: ['syntax-async-functions', 'transform-regenerator', 'transform-runtime']
+                    presets: ['@babel/react', '@babel/env'],
+                    plugins: ['@babel/transform-regenerator', '@babel/transform-runtime']
                 }
             }
         ]

@@ -1,31 +1,31 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Route, BrowserRouter, Switch } from 'react-router-dom'
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
 // This is the main navigation between global functions, global variables, and classes.
-import NavBar from './modules/NavBar'
+import NavBar from './modules/NavBar';
 
 // Home screen. Probably with some flavour.
-import Home from './modules/Home'
+import Home from './modules/Home';
 
 //A list of all global variables in the documentation
-import Variables from './modules/Variables'
+import Variables from './modules/Variables';
 
 // A list of all global functions in the documentation
-import Functions from './modules/Functions'
+import Functions from './modules/Functions';
 
 // A list of all classes in the documentation
-import Classes from './modules/Classes'
+import Classes from './modules/Classes';
 
 // The method for importing all the data that we parse through
-import {read_docs} from './modules/Reader'
+import {read_docs} from './modules/Reader';
 
 
-require("babel-polyfill");
+require('babel-polyfill');
 
 async function screen_render() {
     //Read in the JSON documentation
-    let data = await read_docs("/json/inform_docs.json");
+    let data = await read_docs('/json/inform_docs.json');
 
     //Pass the documentation to all other routes.
     render(
