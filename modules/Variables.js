@@ -1,7 +1,7 @@
-import React from 'react'
-import { Route, NavLink } from 'react-router-dom'
-import SearchInput, {createFilter} from 'react-search-input'
-import Variable from './Variable'
+import React from 'react';
+import { Route, NavLink } from 'react-router-dom';
+import SearchInput, {createFilter} from 'react-search-input';
+import Variable from './Variable';
 
 /**
  * The VariableList component displays a list of all the global variables that are available, along with a link to said
@@ -21,7 +21,7 @@ const VariableList = (props) =>
     {
         listItems.push(
             <li key={key_list[item].toString()}>
-                <NavLink to={"/variables/" + key_list[item].toString()} activeStyle={{ color: 'red' }}>
+                <NavLink to={'/variables/' + key_list[item].toString()} activeStyle={{ color: 'red' }}>
                     <abbr title={key_list[item].toString()} >{key_list[item].toString()}</abbr>
                 </NavLink>
             </li>
@@ -64,7 +64,7 @@ class Variables extends React.Component {
                 </div>
             </div>
         );
-    };
+    }
 
 }
 

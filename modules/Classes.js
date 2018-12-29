@@ -1,7 +1,7 @@
-import React from 'react'
-import { Route, NavLink, Switch } from 'react-router-dom'
-import SearchInput, {createFilter} from 'react-search-input'
-import Class from './Class'
+import React from 'react';
+import { Route, NavLink, Switch } from 'react-router-dom';
+import SearchInput, {createFilter} from 'react-search-input';
+import Class from './Class';
 
 /**
  * The ClassList component displays a list of all classes that are available to be seen within the documentation, along
@@ -21,7 +21,7 @@ const ClassList = (props) =>
     {
         listItems.push(
             <li key={key_list[item].toString()}>
-                <NavLink to={"/classes/" + key_list[item].toString()} activeStyle={{color: 'red'}}>
+                <NavLink to={'/classes/' + key_list[item].toString()} activeStyle={{color: 'red'}}>
                     <abbr title={key_list[item].toString()} >{key_list[item].toString()}</abbr>
                 </NavLink>
             </li>
@@ -34,7 +34,7 @@ const ClassList = (props) =>
 
 function searchUpdated(term)
 {
-    this.setState({searchTerm: term})
+    this.setState({searchTerm: term});
 }
 
 /**

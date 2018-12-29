@@ -1,8 +1,8 @@
-import React from 'react'
-import ReactMarkdown from 'react-markdown'
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
-import ParamList from './ParamList'
-import ReturnField from './ReturnField'
+import ParamList from './ParamList';
+import ReturnField from './ReturnField';
 
 /**
  * The NamedFunctionList exists to print out information on many functions which
@@ -30,4 +30,4 @@ export default (props) =>
     return (
         <div>{listItems}</div>
     );
-}
+};
