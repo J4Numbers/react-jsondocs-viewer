@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 /**
  * The Home component describes the view for the homepage of the documentation server.
@@ -9,5 +9,5 @@ import React from 'react'
 export default (props) => {
     return (
         <h2>Home</h2>
-    )
-}
+    );
+};
