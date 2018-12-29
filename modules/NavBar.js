@@ -1,5 +1,5 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 /**
  * The NavBar component handles the top-level navigation bar between variables, functions, and classes.

@@ -1,5 +1,5 @@
-import React from 'react'
-import ReactMarkdown from 'react-markdown'
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 /**
  * The ReturnField class takes information about the return field of a function (global or class), and returns a
@@ -12,7 +12,7 @@ export default (props) =>
 {
     if (!props.func_returns)
     {
-        return <p></p>
+        return <p></p>;
     }
     else
     {
@@ -21,6 +21,6 @@ export default (props) =>
                 <span style={{fontWeight: 'strong'}}>Returns:</span> &lt; {props.func_returns['type']} &gt;
                 <ReactMarkdown source={props.func_returns['desc']} />
             </p>
-        )
+        );
     }
 };

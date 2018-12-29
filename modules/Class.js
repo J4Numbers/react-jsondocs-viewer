@@ -1,9 +1,9 @@
-import React from 'react'
-import {Switch, Route, NavLink} from 'react-router-dom'
-import ReactMarkdown from 'react-markdown'
+import React from 'react';
+import {Switch, Route, NavLink} from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
 
-import NamedVariableList from './NamedVariableList'
-import NamedFunctionList from './NamedFunctionList'
+import NamedVariableList from './NamedVariableList';
+import NamedFunctionList from './NamedFunctionList';
 
 /**
  * The ClassVariable component describes a variable within a class. If the variable exists, then we display its
@@ -71,7 +71,7 @@ const ClassFunctionList = (props) =>
     {
         listItems.push(
             <li key={item.toString()}>
-                <NavLink exact to={"/classes/" + props.match.params.className.toString() + "/functions/" +
+                <NavLink exact to={'/classes/' + props.match.params.className.toString() + '/functions/' +
                                     item.toString()} activeStyle={{ color: 'red' }}>
                     {item.toString()}
                 </NavLink>
@@ -98,7 +98,7 @@ const ClassVariableList = (props) =>
     {
         listItems.push(
             <li key={item.toString()}>
-                <NavLink exact to={"/classes/" + props.match.params.className.toString() + "/variables/" +
+                <NavLink exact to={'/classes/' + props.match.params.className.toString() + '/variables/' +
                                     item.toString()} activeStyle={{ color: 'red' }}>
                     {item.toString()}
                 </NavLink>
@@ -148,4 +148,4 @@ export default (parent_props, parent_state, parent_params) => {
             </div>
         );
     }
-}
+};

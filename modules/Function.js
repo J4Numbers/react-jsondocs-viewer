@@ -1,7 +1,7 @@
-import React from 'react'
-import ReactMarkdown from 'react-markdown'
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
-import NamedFunctionList from './NamedFunctionList'
+import NamedFunctionList from './NamedFunctionList';
 
 /**
  * The Function component describes a single global function. If the function does not exist, then we don't show
@@ -25,4 +25,4 @@ export default (props, state, params) => {
             <NamedFunctionList jsonList={props.json['functions'][props.match.params.functionName]} />
         );
     }
-}
+};

@@ -1,5 +1,5 @@
-import React from 'react'
-import ReactMarkdown from 'react-markdown'
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 /**
  * The NamedVariableList exists to print information about global variables with
@@ -23,4 +23,4 @@ export default (props) => {
     return (
         <div>{listItems}</div>
     );
-}
+};

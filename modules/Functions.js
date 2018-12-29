@@ -1,7 +1,7 @@
-import React from 'react'
-import { Route, NavLink } from 'react-router-dom'
-import SearchInput, {createFilter} from 'react-search-input'
-import Function from './Function'
+import React from 'react';
+import { Route, NavLink } from 'react-router-dom';
+import SearchInput, {createFilter} from 'react-search-input';
+import Function from './Function';
 
 /**
  * The FunctionList component displays a list of all the global functions that are available, along with a link to said
@@ -22,7 +22,7 @@ const FunctionList = (props) =>
     {
         listItems.push(
             <li key={key_list[item].toString()}>
-                <NavLink to={"/functions/" + key_list[item].toString()} activeStyle={{ color: 'red' }} >
+                <NavLink to={'/functions/' + key_list[item].toString()} activeStyle={{ color: 'red' }} >
                     <abbr title={key_list[item].toString()} >{key_list[item].toString()}</abbr>
                 </NavLink>
             </li>
@@ -64,7 +64,7 @@ class Functions extends React.Component {
                     } />
                 </div>
             </div>
-        )
+        );
     }
 
 }
