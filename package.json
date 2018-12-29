@@ -1,9 +1,9 @@
 {
-  "name": "TQ_Docs",
+  "name": "react-jsondocs-viewer",
   "version": "0.0.1",
-  "description": "A ReactJS webserver for the Trap Quest documentation",
+  "description": "A ReactJS webserver for the arbitrary JSON-stored documentation",
   "main": "index.js",
-  "author": "M4Numbers",
+  "author": "M4Numbers <m4numbers@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
