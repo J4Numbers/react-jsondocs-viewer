@@ -1,6 +1,6 @@
 import 'whatwg-fetch';
 
-require('babel-polyfill');
+require('@babel/polyfill');
 
 /**
  * The Reader class exists to read in the JSON file that this whole webserver relies on.

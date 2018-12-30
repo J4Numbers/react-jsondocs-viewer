@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:dev": "webpack-dev-server --inline --content-base public --history-api-fallback",
+    "start:dev": "webpack-dev-server --inline --history-api-fallback",
     "start:prod": "webpack -p",
     "build": "webpack"
   },
@@ -21,8 +21,6 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime": "^7.2.0",
     "babel-loader": "^8.0.4",
-    "css-loader": "^2.1.0",
-    "style-loader": "^0.23.1",
     "webpack": "^4.28.3",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.14"
@@ -36,5 +34,9 @@
     "react-router-dom": "^4.1.2",
     "react-search-input": "^0.11.2",
     "whatwg-fetch": "^2.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/M4Numbers/react-jsondocs-viewer.git"
   }
 }
