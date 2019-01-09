@@ -1,18 +1,11 @@
 # Running the Documentation Server
 
-In order to view the compiled documentation from the Trap Quest `story.ni`
-file, you must first have installed the following programs:
+Please see the sister project: [jsondocs-parser][1] regarding how to generate
+the documentation for a a project.
 
-+ [Python][1]
-+ [Node.js][2]
+Once you have the generated documentation, place it in `json/docs.json`.
 
-Once these programs are installed, open a command line in the `Source/`
-directory and type: `python InformDocs.py`.
-
-This will generate a JSON file of all the documentation that was contained
-within the story.ni file which will be rendered in the website.
-
-Now type `cd docs` to get into this directory, and run the following:
+Once you have this project downloaded, run the following commands:
 
     npm install
     npm start
@@ -20,7 +13,7 @@ Now type `cd docs` to get into this directory, and run the following:
 The first command installs all the necessary packages for the documentation
 server to be rendered while the second starts up the webserver.
 
-Go to [localhost:8080][3] to see the server.
+Go to [localhost:8080][2] to see the server.
 
 When you want to kill the server off, type `Ctrl+c` in the command window and
 `y` if it asks for confirmation.
@@ -39,6 +32,5 @@ return all items which match your search case.
 Improvements to it are welcome, the initial build was just to get something
 which could read the comments outside of the very nasty JSON file.
 
-[1]: https://www.python.org/
-[2]: https://nodejs.org/
-[3]: http://localhost:8080
+[1]: https://github.com/M4Numbers/jsondocs-parser
+[2]: http://localhost:8080
